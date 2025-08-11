@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url(imgs/fundo.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 50px;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.container {
+  margin: auto;
+  max-width: 1700px;
+}
+
+/* SEÇÃO 01 */
+.classe01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  gap: 25px;
+}
+
+.imagem01 {
+  width: 450px;
+}
+
+.info-classe01 {
+    width: 50%;
+    flex: 1;
+}
+
+.titulo0 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 5em;
+  font-weight: 100;
+  white-space: nowrap;
+}
+
+.classe01 p {
+  font-size: 1.5em;
+  margin-top: 15px;
+  width: 85%;
+}
+
+/* SEÇÃO 02 */
+.classe02 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+}
+
+.info-classe02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.image-classe02 {
+  width: 500px;
+  border-radius: 50px;
+}
+
+.titulo-classe02 {
+  font-weight: 900;
+}
+
+.paragrafo-classe02 {
+  font-size: 1.5em;
+}
+
+/* SEÇÃO 03 */
+.classe03 {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 100%;
+  gap: 50px;
+}
+
+/* SEÇÃO 04 */
+.classe04 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+table {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-collapse: collapse;
+  border-radius: 20px;
+  font-size: 1.3em;
+  width: 80%;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.5em;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.beneficio {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.maleficio {
+  color: #ff5252;
+  font-weight: 600;
+}
+
+.classe05{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

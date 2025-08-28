@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pai D’égua 风味</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- 页眉：餐厅名称和欢迎语 -->
+  <header>
+    <h1>Pai D’égua 风味</h1>
+    <p>欢迎光临！在这里，贝伦帕拉的味道将带来难忘的体验。准备好开启美味之旅吧！</p>
+
+    <!-- 语言选择器 -->
+    <div id="idioma-selector">
+      <label for="idiomas"><strong>🌍 选择语言：</strong></label>
+      <select id="idiomas" onchange="changeLanguage(this.value)">
+        <option value="index.html">Português</option>
+        <option value="index-en.html">English</option>
+        <option value="index-es.html">Español</option>
+        <option value="index-zh.html" selected>中文</option>
+      </select>
+    </div>
+
+    <script>
+      function changeLanguage(page) {
+        window.location.href = page;
+      }
+    </script>
+
+    <!-- 导航菜单 -->
+    <nav>
+      <ol>
+        <li><a href="#starters">前菜</a></li>
+        <li><a href="#main">主菜</a></li>
+        <li><a href="#desserts">甜点</a></li>
+        <li><a href="#drinks">饮品</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <!-- 主内容 -->
+  <main>
+
+    <!-- 前菜 -->
+    <section id="starters">
+      <h2>特色前菜</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato1.jpg" alt="Piracuí鱼饼" width="150"></td>
+          <td><strong>Piracuí鱼饼</strong><br>酥脆的鱼粉球，搭配亚马逊香料。</td>
+          <td>R$ 12.00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato2.jpg" alt="迷你Tacacá" width="150"></td>
+          <td><strong>迷你Tacacá</strong><br>含有Jambu草、Tucupi汤、虾和木薯胶。</td>
+          <td>R$ 15.00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 主菜 -->
+    <section id="main">
+      <h2>主菜</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato3.jpg" alt="Tucupi鸭" width="150"></td>
+          <td><strong>Tucupi鸭</strong><br>搭配白米饭和Jambu叶。</td>
+          <td>R$ 45.00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato4.jpg" alt="鱼Mujica" width="150"></td>
+          <td><strong>鱼Mujica</strong><br>鱼炖菜，加入木薯粉和香草。</td>
+          <td>R$ 38.00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 甜点 -->
+    <section id="desserts">
+      <h2>巴西莓甜点</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato5.jpg" alt="巴西莓碗" width="150"></td>
+          <td><strong>巴西莓碗</strong><br>搭配木薯粉，可选炸鱼。</td>
+          <td>R$ 18.00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato6.jpg" alt="巴西莓冰淇淋" width="150"></td>
+          <td><strong>巴西莓冰淇淋</strong><br>配香蕉和燕麦片。</td>
+          <td>R$ 14.00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 饮品 -->
+    <section id="drinks">
+      <h2>饮品</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato7.jpg" alt="Cupuaçu果汁" width="150"></td>
+          <td><strong>Cupuaçu果汁</strong><br>清爽浓郁的亚马逊水果汁。</td>
+          <td>R$ 10.00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato8.jpg" alt="Guaraná Jesus" width="150"></td>
+          <td><strong>Guaraná Jesus</strong><br>甜美的粉红汽水，风味独特。</td>
+          <td>R$ 8.00</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- 页脚：联系方式和地图 -->
+  <footer>
+    <h3>欢迎来访！</h3>
+    <p>📍 UEPA – Telégrafo 校区</p>
+    <p>📞 +55 (91) 99999-9999</p>
+    <iframe 
+      src="https://www.google.com/maps?q=UEPA+Telegrafo&output=embed"
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen 
+      loading="lazy">
+    </iframe>
+  </footer>
+
+</body>
+</html>

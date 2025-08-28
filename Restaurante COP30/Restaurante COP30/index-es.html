@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores Pai D’égua</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado con nombre del restaurante e introducción -->
+  <header>
+    <h1>Sabores Pai D’égua</h1>
+    <p>¡Bienvenido! Aquí, el sabor de Belém do Pará se convierte en una experiencia inolvidable. ¡Prepárate para un viaje delicioso!</p>
+
+    <!-- Selector de idioma -->
+    <div id="idioma-selector">
+      <label for="idiomas"><strong>🌍 Elige tu idioma:</strong></label>
+      <select id="idiomas" onchange="cambiarIdioma(this.value)">
+        <option value="index.html">Português</option>
+        <option value="index-en.html">English</option>
+        <option value="index-es.html" selected>Español</option>
+        <option value="index-zh.html">中文</option>
+      </select>
+    </div>
+
+    <script>
+      function cambiarIdioma(pagina) {
+        window.location.href = pagina;
+      }
+    </script>
+
+    <!-- Menú de navegación -->
+    <nav>
+      <ol>
+        <li><a href="#entradas">Entradas</a></li>
+        <li><a href="#principales">Platos Principales</a></li>
+        <li><a href="#postres">Postres</a></li>
+        <li><a href="#bebidas">Bebidas</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- Entradas -->
+    <section id="entradas">
+      <h2>Entradas Típicas</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato1.jpg" alt="Bolinho de Piracuí" width="150"></td>
+          <td><strong>Bolinho de Piracuí</strong><br>Bolas crujientes de harina de pescado con especias regionales.</td>
+          <td>R$ 12,00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato2.jpg" alt="Tacacá" width="150"></td>
+          <td><strong>Mini Tacacá</strong><br>Jambu, caldo de tucupí, camarones y goma de mandioca.</td>
+          <td>R$ 15,00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Platos principales -->
+    <section id="principales">
+      <h2>Platos Principales</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato3.jpg" alt="Pato no Tucupi" width="150"></td>
+          <td><strong>Pato no Tucupi</strong><br>Servido con arroz blanco y hojas de jambu.</td>
+          <td>R$ 45,00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato4.jpg" alt="Mujica de Peixe" width="150"></td>
+          <td><strong>Mujica de Peixe</strong><br>Guiso de pescado con harina de mandioca y hierbas.</td>
+          <td>R$ 38,00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Postres -->
+    <section id="postres">
+      <h2>Postres con Açaí</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato5.jpg" alt="Tazón de Açaí" width="150"></td>
+          <td><strong>Tazón de Açaí</strong><br>Servido con harina de tapioca y pescado frito opcional.</td>
+          <td>R$ 18,00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato6.jpg" alt="Helado de Açaí" width="150"></td>
+          <td><strong>Helado de Açaí</strong><br>Con plátano y granola.</td>
+          <td>R$ 14,00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Bebidas -->
+    <section id="bebidas">
+      <h2>Bebidas</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato7.jpg" alt="Jugo de Cupuaçu" width="150"></td>
+          <td><strong>Jugo de Cupuaçu</strong><br>Jugo refrescante y cremoso de fruta amazónica.</td>
+          <td>R$ 10,00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato8.jpg" alt="Guaraná Jesus" width="150"></td>
+          <td><strong>Guaraná Jesus</strong><br>Refresco rosa dulce con sabor único.</td>
+          <td>R$ 8,00</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- Pie de página con contacto y mapa -->
+  <footer>
+    <h3>¡Encuéntranos aquí!</h3>
+    <p>📍 UEPA – Campus Telégrafo</p>
+    <p>📞 +55 (91) 99999-9999</p>
+    <iframe 
+      src="https://www.google.com/maps?q=UEPA+Telegrafo&output=embed"
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen 
+      loading="lazy">
+    </iframe>
+  </footer>
+
+</body>
+</html>

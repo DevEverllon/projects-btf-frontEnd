@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>探索贝伦：通往亚马逊的门户</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+    }
+
+    #language-selector {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 5px;
+      font-size: 1em;
+      border-radius: 5px;
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    .attraction {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .attraction h2 {
+      color: #2c3e50;
+    }
+
+    .attraction ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .attraction li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #eee;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌍 语言选择器 -->
+  <div id="language-selector">
+    <label for="language"><strong>🌍 语言：</strong></label>
+    <select id="language" onchange="switchLanguage(this.value)">
+      <option value="index-zh.html">🇨🇳 中文</option>
+      <option value="index.html">🇧🇷 葡萄牙语</option>
+      <option value="index-en.html">🇺🇸 英语</option>
+      <option value="index-es.html">🇪🇸 西班牙语</option>
+    </select>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🌿 探索贝伦：通往亚马逊的门户</h1>
+    <p>
+      贝伦是巴西最具活力的城市之一，融合了历史、信仰、美食和自然。  
+      它始于 1616 年的圣诞堡，如今以纳扎雷圣母节、Ver-o-Peso 市场和码头文化区吸引着世界各地的游客。
+    </p>
+  </header>
+
+  <!-- 旅游景点 -->
+  <section class="attraction">
+    <h2>🏛️ 历史中心</h2>
+    <ul>
+      <li><strong>圣诞堡：</strong> 贝伦的起源地，俯瞰瓜加拉湾。</li>
+      <li><strong>老城区：</strong> 石板街道、殖民建筑和百年教堂。</li>
+      <li><strong>纳扎雷圣母大教堂：</strong> 举办巴西最大的宗教活动——纳扎雷圣母节。</li>
+    </ul>
+    <p>趣闻：纳扎雷圣母节每年吸引超过 200 万信徒在贝伦街头进行信仰游行。</p>
+  </section>
+
+  <section class="attraction">
+    <h2>🍲 亚马逊美食</h2>
+    <ul>
+      <li><strong>Ver-o-Peso 市场：</strong> 拉美最大的露天市场，出售鱼类、水果和森林草药。</li>
+      <li><strong>码头文化区：</strong> 旧港口仓库改建为美食与文化中心。</li>
+      <li><strong>特色菜肴：</strong> 酱汁鸭、maniçoba、tacacá 和纯正 açaí 配面粉。</li>
+    </ul>
+    <p>趣闻：açaí 是凌晨由森林中的船只运送到市场的，保持新鲜。</p>
+  </section>
+
+  <section class="attraction">
+    <h2>🌳 自然与休闲</h2>
+    <ul>
+      <li><strong>白鹭公园：</strong> 生态公园，设有观景塔、蝴蝶馆和本地鸟类。</li>
+      <li><strong>Mosqueiro 岛：</strong> 淡水海滩，有海浪和悠闲的村庄氛围。</li>
+      <li><strong>罗德里格斯·阿尔维斯森林：</strong> 城市中心的一片亚马逊雨林。</li>
+    </ul>
+    <p>趣闻：白鹭公园拥有超过 300 只白鹭，并提供每日喂食表演。</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>📍 本项目由 UEPA 学生开发</h3>
+    <p>地址：<a href="https://www.google.com/maps?q=UEPA+Telegrafo" target="_blank">UEPA – Telégrafo 校区</a>，贝伦 / 巴西</p>
+    <p>📱 联系方式：<a href="https://wa.me/5591999999999" target="_blank">+55 (91) 99999-9999</a></p>
+  </footer>
+
+  <!-- JS：语言切换 -->
+  <script>
+    function switchLanguage(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>

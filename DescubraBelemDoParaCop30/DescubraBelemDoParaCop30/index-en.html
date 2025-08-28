@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Belém, Gateway to the Amazon</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+    }
+
+    #language-selector {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 5px;
+      font-size: 1em;
+      border-radius: 5px;
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    .attraction {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .attraction h2 {
+      color: #2c3e50;
+    }
+
+    .attraction ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .attraction li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #eee;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌍 Language Selector -->
+  <div id="language-selector">
+    <label for="language"><strong>🌍 Language:</strong></label>
+    <select id="language" onchange="switchLanguage(this.value)">
+      <option value="index-en.html">🇺🇸 English</option>
+      <option value="index.html">🇧🇷 Portuguese</option>
+      <option value="index-es.html">🇪🇸 Spanish</option>
+      <option value="index-zh.html">🇨🇳 Chinese</option>
+    </select>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🌿 Discover Belém, Gateway to the Amazon</h1>
+    <p>
+      Belém is one of Brazil’s most vibrant cities, blending history, faith, flavors, and nature.  
+      Founded in 1616 around the Presépio Fort, it now enchants visitors with the Círio de Nazaré procession, the Ver-o-Peso market, and the revitalized Estação das Docas.
+    </p>
+  </header>
+
+  <!-- TOURIST ATTRACTIONS -->
+  <section class="attraction">
+    <h2>🏛️ Historic Center</h2>
+    <ul>
+      <li><strong>Presépio Fort:</strong> The birthplace of the city, overlooking Guajará Bay.</li>
+      <li><strong>Old Town:</strong> Cobblestone streets, colonial buildings, and centuries-old churches.</li>
+      <li><strong>Basílica de Nazaré:</strong> Home to Brazil’s largest religious event: the Círio de Nazaré.</li>
+    </ul>
+    <p>Fun fact: The Círio attracts over 2 million people in a massive walk of faith through Belém’s streets.</p>
+  </section>
+
+  <section class="attraction">
+    <h2>🍲 Amazonian Cuisine</h2>
+    <ul>
+      <li><strong>Ver-o-Peso Market:</strong> The largest open-air market in Latin America, full of fish, fruits, and forest herbs.</li>
+      <li><strong>Estação das Docas:</strong> Former port warehouses turned into a cultural and culinary hub.</li>
+      <li><strong>Typical dishes:</strong> Duck in tucupi, maniçoba, tacacá, and pure açaí with flour.</li>
+    </ul>
+    <p>Fun fact: Boats carrying fresh açaí arrive at Ver-o-Peso before sunrise, straight from the rivers.</p>
+  </section>
+
+  <section class="attraction">
+    <h2>🌳 Nature & Day Trips</h2>
+    <ul>
+      <li><strong>Mangal das Garças:</strong> Ecological park with a lookout tower, butterfly garden, and native birds.</li>
+      <li><strong>Mosqueiro Island:</strong> Freshwater beaches with waves and a laid-back village vibe.</li>
+      <li><strong>Rodrigues Alves Forest:</strong> A slice of the Amazon rainforest right in the city center.</li>
+    </ul>
+    <p>Fun fact: Mangal das Garças is home to over 300 herons and offers daily feeding shows.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>📍 Project developed by UEPA students</h3>
+    <p>Location: <a href="https://www.google.com/maps?q=UEPA+Telegrafo" target="_blank">UEPA – Telégrafo Campus</a>, Belém/PA</p>
+    <p>📱 Contact: <a href="https://wa.me/5591999999999" target="_blank">+55 (91) 99999-9999</a></p>
+  </footer>
+
+  <!-- JS: Language Switch -->
+  <script>
+    function switchLanguage(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>

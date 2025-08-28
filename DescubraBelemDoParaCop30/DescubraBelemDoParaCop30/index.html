@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubra Belém do Pará</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+    }
+
+    #seletor-idioma {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 5px;
+      font-size: 1em;
+      border-radius: 5px;
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    .atrativo {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .atrativo h2 {
+      color: #2c3e50;
+    }
+
+    .atrativo ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .atrativo li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #eee;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌍 Seletor de Idioma -->
+  <div id="seletor-idioma">
+    <label for="idioma"><strong>🌍 Idioma:</strong></label>
+    <select id="idioma" onchange="mudarIdioma(this.value)">
+      <option value="index.html">🇧🇷 Português</option>
+      <option value="index-en.html">🇺🇸 English</option>
+      <option value="index-es.html">🇪🇸 Español</option>
+      <option value="index-zh.html">🇨🇳 中文</option>
+    </select>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🌿 Descubra Belém do Pará</h1>
+    <p>
+      Belém é a porta de entrada da Amazônia e um dos destinos mais vibrantes do Brasil.  
+      A cidade mistura história, fé, sabores e natureza em cada esquina.  
+      Tudo começou com o Forte do Presépio em 1616, e hoje Belém encanta com o Círio de Nazaré, o Ver-o-Peso e a Estação das Docas.
+    </p>
+  </header>
+
+  <!-- ATRATIVOS TURÍSTICOS -->
+  <section class="atrativo">
+    <h2>🏛️ Centro Histórico</h2>
+    <ul>
+      <li><strong>Forte do Presépio:</strong> Marco da fundação da cidade, com vista para a Baía do Guajará.</li>
+      <li><strong>Cidade Velha:</strong> Ruas de pedra, casarões coloniais e igrejas centenárias.</li>
+      <li><strong>Basílica de Nazaré:</strong> Palco do maior evento religioso do Brasil: o Círio de Nazaré.</li>
+    </ul>
+    <p>Curiosidade: O Círio reúne mais de 2 milhões de pessoas em uma caminhada de fé pelas ruas de Belém.</p>
+  </section>
+
+  <section class="atrativo">
+    <h2>🍲 Gastronomia Paraense</h2>
+    <ul>
+      <li><strong>Mercado Ver-o-Peso:</strong> O maior mercado a céu aberto da América Latina, com peixes, frutas e ervas amazônicas.</li>
+      <li><strong>Estação das Docas:</strong> Antigos armazéns portuários transformados em polo gastronômico e cultural.</li>
+      <li><strong>Pratos típicos:</strong> Pato no tucupi, maniçoba, tacacá e açaí puro com farinha.</li>
+    </ul>
+    <p>Curiosidade: Os barcos com açaí chegam ao Ver-o-Peso ainda de madrugada, direto dos rios da floresta.</p>
+  </section>
+
+  <section class="atrativo">
+    <h2>🌳 Natureza e Passeios</h2>
+    <ul>
+      <li><strong>Mangal das Garças:</strong> Parque ecológico com mirante, borboletário e aves da região.</li>
+      <li><strong>Ilha do Mosqueiro:</strong> Praias de água doce com ondas e clima de vila litorânea.</li>
+      <li><strong>Bosque Rodrigues Alves:</strong> Um pedaço da floresta amazônica no meio da cidade.</li>
+    </ul>
+    <p>Curiosidade: O Mangal das Garças abriga o maior viveiro de garças da cidade, com mais de 300 aves.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>📍 Projeto desenvolvido por alunos da UEPA</h3>
+    <p>Local: <a href="https://www.google.com/maps?q=UEPA+Telegrafo" target="_blank">UEPA – Campus Telégrafo</a>, Belém/PA</p>
+    <p>📱 Contato: <a href="https://wa.me/5591999999999" target="_blank">(91) 99999-9999</a></p>
+  </footer>
+
+  <!-- JS: Redirecionamento de idioma -->
+  <script>
+    function mudarIdioma(pagina) {
+      window.location.href = pagina;
+    }
+  </script>
+
+</body>
+</html>

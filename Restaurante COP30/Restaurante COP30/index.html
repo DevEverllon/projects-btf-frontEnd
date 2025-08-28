@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pai D’égua Sabores</title>
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com nome do restaurante e introdução -->
+  <header>
+    <h1>Pai D’égua Sabores</h1>
+    <p>Se achegue! Aqui é onde o sabor de Belém do Pará vira experiência. Prepare-se pra uma viagem gastronômica arretada!</p>
+
+    <!-- Seletor de idioma para navegação entre versões -->
+    <div id="idioma-selector">
+      <label for="idiomas"><strong>🌍 Escolha o idioma:</strong></label>
+      <select id="idiomas" onchange="trocarIdioma(this.value)">
+        <option value="index.html">Português</option>
+        <option value="index-en.html">English</option>
+        <option value="index-es.html">Español</option>
+        <option value="index-zh.html">中文</option>
+      </select>
+    </div>
+
+    <!-- Script para redirecionar para a página selecionada -->
+    <script>
+      function trocarIdioma(pagina) {
+        window.location.href = pagina;
+      }
+    </script>
+
+    <!-- Navegação com lista ordenada das seções -->
+    <nav>
+      <ol>
+        <li><a href="#entradas">Entradas</a></li>
+        <li><a href="#principais">Pratos Principais</a></li>
+        <li><a href="#sobremesas">Sobremesas</a></li>
+        <li><a href="#bebidas">Bebidas</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal do cardápio -->
+  <main>
+
+    <!-- Seção de entradas -->
+    <section id="entradas">
+      <h2>Entradas Típicas</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato1.jpg" alt="Ilustração Bolinho de Piracuí" width="150"></td>
+          <td><strong>Bolinho de Piracuí</strong><br>Farinha de peixe seco frita com temperos regionais.</td>
+          <td>R$ 12,00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato2.jpg" alt="Ilustração Tacacá" width="150"></td>
+          <td><strong>Mini Tacacá</strong><br>Jambu, goma e camarão em caldo de tucupi.</td>
+          <td>R$ 15,00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Seção de pratos principais -->
+    <section id="principais">
+      <h2>Pratos Principais</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato3.jpg" alt="Ilustração Pato no Tucupi" width="150"></td>
+          <td><strong>Pato no Tucupi</strong><br>Servido com arroz branco e jambu.</td>
+          <td>R$ 45,00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato4.jpg" alt="Ilustração Mujica de Peixe" width="150"></td>
+          <td><strong>Mujica de Peixe</strong><br>Ensopado de peixe com farinha e cheiro-verde.</td>
+          <td>R$ 38,00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Seção de sobremesas -->
+    <section id="sobremesas">
+      <h2>Sobremesas com Açaí</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato5.jpg" alt="Ilustração Açaí na Tigela" width="150"></td>
+          <td><strong>Açaí na Tigela</strong><br>Com farinha de tapioca e peixe frito opcional.</td>
+          <td>R$ 18,00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato6.jpg" alt="Ilustração Sorvete de Açaí" width="150"></td>
+          <td><strong>Sorvete de Açaí</strong><br>Com banana e granola.</td>
+          <td>R$ 14,00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Seção de bebidas -->
+    <section id="bebidas">
+      <h2>Bebidas</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato7.jpg" alt="Ilustração Suco de Cupuaçu" width="150"></td>
+          <td><strong>Suco de Cupuaçu</strong><br>Refrescante e encorpado.</td>
+          <td>R$ 10,00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato8.jpg" alt="Ilustração Guaraná Jesus" width="150"></td>
+          <td><strong>Guaraná Jesus</strong><br>Refrigerante rosado e doce.</td>
+          <td>R$ 8,00</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- Rodapé com localização e contato -->
+  <footer>
+    <h3>Nos encontre aqui!</h3>
+    <p>📍 UEPA – Campus Telégrafo</p>
+    <p>📞 (91) 99999-9999</p>
+    <!-- Mapa incorporado do Google Maps -->
+    <iframe 
+      src="https://www.google.com/maps?q=UEPA+Telegrafo&output=embed"
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen 
+      loading="lazy">
+    </iframe>
+  </footer>
+
+</body>
+</html>

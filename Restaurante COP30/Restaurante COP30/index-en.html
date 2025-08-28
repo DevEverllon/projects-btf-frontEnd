@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pai D’égua Flavors</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Header with restaurant name and intro -->
+  <header>
+    <h1>Pai D’égua Flavors</h1>
+    <p>Welcome! Here, the taste of Belém do Pará becomes an unforgettable experience. Get ready for a delicious journey!</p>
+
+    <!-- Language selector -->
+    <div id="idioma-selector">
+      <label for="idiomas"><strong>🌍 Choose your language:</strong></label>
+      <select id="idiomas" onchange="trocarIdioma(this.value)">
+        <option value="index.html">Português</option>
+        <option value="index-en.html" selected>English</option>
+        <option value="index-es.html">Español</option>
+        <option value="index-zh.html">中文</option>
+      </select>
+    </div>
+
+    <script>
+      function trocarIdioma(pagina) {
+        window.location.href = pagina;
+      }
+    </script>
+
+    <!-- Navigation menu -->
+    <nav>
+      <ol>
+        <li><a href="#starters">Starters</a></li>
+        <li><a href="#main">Main Dishes</a></li>
+        <li><a href="#desserts">Desserts</a></li>
+        <li><a href="#drinks">Drinks</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+
+    <!-- Starters -->
+    <section id="starters">
+      <h2>Typical Starters</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato1.jpg" alt="Piracuí Cake" width="150"></td>
+          <td><strong>Piracuí Cake</strong><br>Crispy fish flour balls with regional spices.</td>
+          <td>R$ 12.00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato2.jpg" alt="Tacacá" width="150"></td>
+          <td><strong>Mini Tacacá</strong><br>Jambu, tucupi broth, shrimp and manioc gum.</td>
+          <td>R$ 15.00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Main dishes -->
+    <section id="main">
+      <h2>Main Dishes</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato3.jpg" alt="Duck in Tucupi" width="150"></td>
+          <td><strong>Duck in Tucupi</strong><br>Served with white rice and jambu leaves.</td>
+          <td>R$ 45.00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato4.jpg" alt="Fish Mujica" width="150"></td>
+          <td><strong>Fish Mujica</strong><br>Fish stew with manioc flour and herbs.</td>
+          <td>R$ 38.00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Desserts -->
+    <section id="desserts">
+      <h2>Açaí Desserts</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato5.jpg" alt="Açaí Bowl" width="150"></td>
+          <td><strong>Açaí Bowl</strong><br>Served with tapioca flour and optional fried fish.</td>
+          <td>R$ 18.00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato6.jpg" alt="Açaí Ice Cream" width="150"></td>
+          <td><strong>Açaí Ice Cream</strong><br>With banana and granola.</td>
+          <td>R$ 14.00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Drinks -->
+    <section id="drinks">
+      <h2>Drinks</h2>
+      <table>
+        <tr>
+          <td><img src="img/ilustracao-prato7.jpg" alt="Cupuaçu Juice" width="150"></td>
+          <td><strong>Cupuaçu Juice</strong><br>Refreshing and creamy Amazon fruit juice.</td>
+          <td>R$ 10.00</td>
+        </tr>
+        <tr>
+          <td><img src="img/ilustracao-prato8.jpg" alt="Guaraná Jesus" width="150"></td>
+          <td><strong>Guaraná Jesus</strong><br>Sweet pink soda with a unique flavor.</td>
+          <td>R$ 8.00</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- Footer with contact and map -->
+  <footer>
+    <h3>Find us here!</h3>
+    <p>📍 UEPA – Telégrafo Campus</p>
+    <p>📞 +55 (91) 99999-9999</p>
+    <iframe 
+      src="https://www.google.com/maps?q=UEPA+Telegrafo&output=embed"
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen 
+      loading="lazy">
+    </iframe>
+  </footer>
+
+</body>
+</html>

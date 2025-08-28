@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* IMPORTAÇÃO DE FONT Merriweather e Poppins */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-fundo: #fcfff7;
+    --cor-texto-black: #333;
+    --cor-texto-white: #f8f8f8;
+    --cor-borda: #ddd;
+
+    --cor-primaria: #228B22;
+    /* Verde Floresta */
+    --cor-secundaria: #006400;
+    /* Verde Escuro Amazônico */
+    --cor-terciaria: #8FBC8F;
+    /* Verde Claro Folhagem */
+
+    --font-princioal: 'Poppins', sans-serif;
+    --font-destaque: 'Merriweather', serif;
+}
+
+body {
+    background-color: var(--color-fundo);
+}
+
+
+/* Estilo básico para o seletor de idioma */
+.container_seletor-idioma {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-white);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+    padding: 13px 20px;
+
+    position: fixed;
+    left: 82%;
+    border-radius: 40px;
+    top: 10px;
+}
+
+.container_seletor-idioma select {
+    font-size: 1em;
+    padding: 5px 8px;
+    border-radius: 15px;
+    background-color: var(--color-fundo);
+    border: 1px solid var(--cor-borda);
+    cursor: pointer;
+    width: 150px;
+}
+
+/* ---------------------------------- */
+/* HEADER */
+header {
+    /* width: 100%;
+    max-width: 1200px; */
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    color: #fff;
+
+    /* IMAGE DE FUNDO */
+    background: url('../images/image-fundo-header.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+
+    /* position: absolute; */
+}
+
+h1 {
+    font-family: var(--font-destaque);
+    font-size: 3.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.paragrafo-header {
+    font-size: 1.2em;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.container_idioma-bandeiras {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* ---------------------------------- */
+/* main */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#destaque {
+    width: 100%;
+}
+
+h2 {
+    font-family: var(--font-destaque);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+section>p {
+    text-align: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-white);
+    font-size: 1.5em;
+    margin: 18px 0px 0px 0px;
+}
+
+/* Estilo para os cards de produto */
+#produtos {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card-produto {
+    background-color: var(--color-fundo);
+    border: 2px solid var(--cor-borda);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 15px;
+    width: 48%;
+    height: 250px;
+}
+
+.card-produto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-produto img{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+iframe {
+    margin-top: 10px;
+    border-radius: 8px;
+}

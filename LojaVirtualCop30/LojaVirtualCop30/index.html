@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Amazônia Pai D’égua</title>
+
+  <!-- CDM PARA ESTILO EXTERNO -->
+  <link rel="stylesheet" href="/LojaVirtualCop30/styles/estilos.css">
+
+  <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- 🌐 Seletor de Idioma no topo -->
+  <div id="seletor-idioma" class="container_seletor-idioma">
+    <label for="idioma"><strong>🌍 Idioma:</strong></label>
+
+    <select id="idioma" onchange="mudarIdioma(this.value)">
+      <option value="index.html">🇧🇷 Português</option>
+      <option value="index-en.html">🇺🇸 English</option>
+      <option value="index-es.html">🇪🇸 Español</option>
+      <option value="index-zh.html">🇨🇳 中文</option>
+    </select>
+  </div>
+
+  <!-- HEADER: Nome da loja, história curiosa e bandeiras -->
+  <header>
+    </div>
+    <h1>🌿 Loja Amazônia Pai D’égua</h1>
+
+    <p class="paragrafo-header">
+      Tudo começou quando um grupo de estudantes da UEPA tentou fazer tacacá no laboratório de química.
+      O jambu escapou da panela, o tucupi ferveu demais e alguém gritou: “Isso aqui tá pai d’égua demais!”
+      Foi aí que surgiu a ideia: criar uma loja com kits regionais para que ninguém precisasse virar químico pra
+      saborear a Amazônia.
+    </p>
+
+    <!-- Bandeiras como alternativa visual para troca de idioma -->
+    <div id="idioma-bandeiras" class="container_idioma-bandeiras">
+      <!-- BANDEIRA BRASIL -->
+      <a href="index.html"><img src="images/flag-bra.png" alt="Português" width="32" height="32" style="border-radius: 100px;"></a>
+
+      <!-- BANDEIRA USA -->
+      <a href="index-en.html"><img src="images/flag-usa.png" alt="English" width="32" height="32" style="border-radius: 100px;"></a>
+
+      <!-- BANDEIRA ESPANHA -->
+      <a href="index-es.html"><img src="images/flag-esp.png" alt="Español" width="32" height="32" style="border-radius: 100px;"></a>
+
+      <!-- BANDEIRA CHINA -->
+      <a href="index-zh.html"><img src="images/flag-chi.png" alt="中文" width="32" height="32" style="border-radius: 100px;"></a>
+    </div>
+  </header>
+
+  <!-- MAIN: Produtos da loja -->
+  <main>
+    <section id="destaque">
+      <h2>✨ Kits de Ingredientes Regionais</h2>
+      
+      <p>Leve um pedacinho da floresta para casa com nossos kits típicos da Amazônia!</p>
+    </section>
+
+    <section id="produtos">
+
+      <div class="card-produto">
+        <img src="images/produto1-acai.webp" alt="Kit Açaí">
+        <h3>Kit Açaí Tradicional</h3>
+        <p>Polpa de açaí, farinha de tapioca e mel de abelha nativa.</p>
+        <p><strong>R$ 49,90</strong></p>
+      </div>
+
+      <div class="card-produto">
+        <img src="img/kit-jambu.jpg" alt="Kit Jambu">
+        <h3>Kit Jambu & Tucupi</h3>
+        <p>Perfeito para preparar tacacá ou pato no tucupi em casa.</p>
+        <p><strong>R$ 59,90</strong></p>
+      </div>
+
+      <div class="card-produto">
+        <img src="img/kit-doces.jpg" alt="Kit Doces Amazônicos">
+        <h3>Kit Doces Amazônicos</h3>
+        <p>Geleia de cupuaçu, doce de bacuri e bombons de castanha.</p>
+        <p><strong>R$ 39,90</strong></p>
+      </div>
+
+      <div class="card-produto">
+        <img src="img/kit-pirarucu.jpg" alt="Kit Pirarucu">
+        <h3>Kit Pirarucu Defumado</h3>
+        <p>Peixe nobre da Amazônia com temperos regionais.</p>
+        <p><strong>R$ 69,90</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: Contato e localização -->
+  <footer>
+    <h3>📍 Onde estamos</h3>
+    <p>Local físico: <a href="https://www.google.com/maps?q=UEPA+Telegrafo" target="_blank">UEPA – Campus Telégrafo</a>,
+      Belém/PA</p>
+    <p>📱 Atendimento via WhatsApp: <a href="https://wa.me/5591999999999" target="_blank">(91) 99999-9999</a></p>
+
+    <iframe src="https://www.google.com/maps?q=UEPA+Telegrafo&output=embed" width="100%" height="300" style="border:0;"
+      allowfullscreen loading="lazy">
+    </iframe>
+  </footer>
+
+  <!-- Script para redirecionar ao idioma selecionado -->
+  <script>
+    function mudarIdioma(pagina) {
+      window.location.href = pagina;
+    }
+  </script>
+
+</body>
+
+</html>

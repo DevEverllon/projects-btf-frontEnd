@@ -8,6 +8,8 @@
     <!-- CDM PARA ESTILO EXTERNO -->
     <link rel="stylesheet" href="styles/estilos.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <!-- ÍCONE NA ABA DO NAVEGADOR -->
     <link
       rel="shortcut icon"
@@ -18,9 +20,11 @@
   <body>
     <!-- 🌐 语言选择器 -->
     <div id="language-selector" class="container_seletor-idioma">
-      <label for="language"><strong>🌍 语言：</strong></label>
-      <select id="language" onchange="switchLanguage(this.value)">
-        <option value="index-zh.html">🇨🇳 中文</option>
+    <label for="idioma">
+        <i class="bi bi-globe"></i>
+    </label>
+
+      <select id="language" onchange="switchLanguage(this.value)">        <option value="index-zh.html">🇨🇳 中文</option>
         <option value="index.html">🇧🇷 葡萄牙语</option>
         <option value="index-en.html">🇺🇸 英语</option>
         <option value="index-es.html">🇪🇸 西班牙语</option>

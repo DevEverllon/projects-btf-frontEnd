@@ -45,18 +45,30 @@ body {
   top: 10px;
   border-radius: 24px;
   z-index: 10;
+  cursor: pointer;
+  
+}
+
+.container_seletor-idioma:hover {
+  transition: transform 3s;
+  background-color: #228b2268;
 }
 
 .container_seletor-idioma select {
   font-size: 1em;
   padding: 5px 8px;
-  border-radius: 12px;
-  background-color: var(--color-fundo);
-  border: 1px solid var(--cor-borda);
-  cursor: pointer;
+  background-color: transparent;
+  color: var(--cor-texto-white);
   width: 138px;
   transition: border-color 0.2s;
+  cursor: pointer;
   outline: none;
+  border: none;
+}
+
+.container_seletor-idioma option{
+  background-color: var(--color-fundo);
+  color: var(--cor-texto-black);
 }
 
 /* RESPONSIVIDADE DA SEÇÃO DE IDIOMA NO TOPO DO SITE */

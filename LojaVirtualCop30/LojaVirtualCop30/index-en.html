@@ -6,6 +6,8 @@
     <title>Amazonia Pai D’égua Store</title>
     <link rel="stylesheet" href="styles/estilos.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <!-- ÍCONE NA ABA DO NAVEGADOR -->
     <link
       rel="shortcut icon"
@@ -16,7 +18,10 @@
   <body>
     <!-- 🌐 Language Selector -->
     <div id="language-selector" class="container_seletor-idioma">
-      <label for="language"><strong>🌍 Language:</strong></label>
+    <label for="idioma">
+        <i class="bi bi-globe"></i>
+    </label>
+
       <select id="language" onchange="switchLanguage(this.value)">
         <option value="index-en.html">🇺🇸 English</option>
         <option value="index.html">🇧🇷 Português</option>

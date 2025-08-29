@@ -4,8 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pai D’égua Sabores</title>
-  <!-- Link para o arquivo CSS externo -->
-  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: #f8f6f2;
+      color: #333;
+    }
+    header {
+      background: #4e2e1e;
+      color: #fff;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin: 0 0 1rem 0;
+      font-size: 1.2rem;
+    }
+    #idioma-selector {
+      margin: 1rem 0;
+    }
+    #idiomas {
+      padding: 0.3rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    nav ol {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+    }
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(78,46,30,0.08);
+      padding: 1.5rem;
+    }
+    section h2 {
+      color: #4e2e1e;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #ffd700;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    td {
+      padding: 0.7rem;
+      vertical-align: middle;
+      border-bottom: 1px solid #eee;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    img {
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    footer {
+      background: #4e2e1e;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+      margin-top: 2rem;
+    }
+    footer h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+    }
+    footer p {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    iframe {
+      border-radius: 10px;
+      margin-top: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+    @media (max-width: 600px) {
+      main, section {
+        padding: 0.5rem;
+      }
+      table, td {
+        font-size: 0.95rem;
+      }
+      nav ol {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
 

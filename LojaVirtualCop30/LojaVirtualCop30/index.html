@@ -7,9 +7,10 @@
   <title>Loja Amazônia Pai D’égua</title>
 
   <!-- CDM PARA ESTILO EXTERNO -->
-  <link rel="stylesheet" href="/LojaVirtualCop30/styles/estilos.css">
+  <link rel="stylesheet" href="styles/estilos.css">
 
-  <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+  <!-- ÍCONE NA ABA DO NAVEGADOR -->
+  <link rel="shortcut icon" href="images/logo-favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
   <!-- HEADER: Nome da loja, história curiosa e bandeiras -->
   <header>
     </div>
-    <h1>🌿 Loja Amazônia Pai D’égua</h1>
+    <h1>Loja Amazônia Pai D’égua</h1>
 
     <p class="paragrafo-header">
       Tudo começou quando um grupo de estudantes da UEPA tentou fazer tacacá no laboratório de química.
@@ -56,49 +57,71 @@
 
   <!-- MAIN: Produtos da loja -->
   <main>
-    <section id="destaque">
-      <h2>✨ Kits de Ingredientes Regionais</h2>
+    <section id="destaque" class="destaque">
+      <h2>Kits de Ingredientes Regionais</h2>
       
       <p>Leve um pedacinho da floresta para casa com nossos kits típicos da Amazônia!</p>
     </section>
 
-    <section id="produtos">
+    <section id="produtos" class="produtos">
 
+      <!-- card 01 -->
       <div class="card-produto">
-        <img src="images/produto1-acai.webp" alt="Kit Açaí">
-        <h3>Kit Açaí Tradicional</h3>
+        <img src="images/produto1.webp" alt="Kit Açaí">
+
+        <div>
+          <h3>Kit Açaí Tradicional</h3>
+        
         <p>Polpa de açaí, farinha de tapioca e mel de abelha nativa.</p>
-        <p><strong>R$ 49,90</strong></p>
+
+        <p>
+          <strong>R$ 49,90</strong>
+        </p>
+        </div>
       </div>
 
+      <!-- card 02 -->
       <div class="card-produto">
-        <img src="img/kit-jambu.jpg" alt="Kit Jambu">
-        <h3>Kit Jambu & Tucupi</h3>
-        <p>Perfeito para preparar tacacá ou pato no tucupi em casa.</p>
-        <p><strong>R$ 59,90</strong></p>
+        <img src="images/produto2.jpg" alt="Kit Jambu">
+        
+        <div>
+          <h3>Kit Jambu & Tucupi</h3>
+          <p>Perfeito para preparar tacacá ou pato no tucupi em casa.</p>
+          <p><strong>R$ 59,90</strong></p>
+        </div>
       </div>
 
+      <!-- card 03 -->
       <div class="card-produto">
-        <img src="img/kit-doces.jpg" alt="Kit Doces Amazônicos">
-        <h3>Kit Doces Amazônicos</h3>
-        <p>Geleia de cupuaçu, doce de bacuri e bombons de castanha.</p>
-        <p><strong>R$ 39,90</strong></p>
+        <img src="images/produto3.jpg" alt="Kit Doces Amazônicos">
+
+        <div>
+          <h3>Kit Doces Amazônicos</h3>
+          <p>Geleia de cupuaçu, doce de bacuri e bombons de castanha.</p>
+          <p><strong>R$ 39,90</strong></p>
+        </div>
       </div>
 
+      <!-- card 04 -->
       <div class="card-produto">
-        <img src="img/kit-pirarucu.jpg" alt="Kit Pirarucu">
-        <h3>Kit Pirarucu Defumado</h3>
-        <p>Peixe nobre da Amazônia com temperos regionais.</p>
-        <p><strong>R$ 69,90</strong></p>
+        <img src="images/produto4.jpg" alt="Kit Pirarucu">
+
+        <div>
+          <h3>Kit Pirarucu Defumado</h3>
+          <p>Peixe nobre da Amazônia com temperos regionais.</p>
+          <p><strong>R$ 69,90</strong></p>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- FOOTER: Contato e localização -->
   <footer>
-    <h3>📍 Onde estamos</h3>
+    <h2>Onde estamos</h2>
+
     <p>Local físico: <a href="https://www.google.com/maps?q=UEPA+Telegrafo" target="_blank">UEPA – Campus Telégrafo</a>,
       Belém/PA</p>
+
     <p>📱 Atendimento via WhatsApp: <a href="https://wa.me/5591999999999" target="_blank">(91) 99999-9999</a></p>
 
     <iframe src="https://www.google.com/maps?q=UEPA+Telegrafo&output=embed" width="100%" height="300" style="border:0;"
@@ -106,6 +129,7 @@
     </iframe>
   </footer>
 
+  
   <!-- Script para redirecionar ao idioma selecionado -->
   <script>
     function mudarIdioma(pagina) {
